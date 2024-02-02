@@ -1,0 +1,215 @@
+~/LABINFO$ hisstory -c
+bash: hisstory: command not found
+~/LABINFO$ history -c
+~/LABINFO$ git clone https://github.com/ratmir-delas/LABINFO-RECURSO.git
+Cloning into 'LABINFO-RECURSO'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+~/LABINFO$ ls
+LABINFO-RECURSO  package.json  README.md  replit.nix  ReplRoot  root.sh  server.js
+~/LABINFO$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+    .replit
+    LABINFO-RECURSO/
+    README.md
+    ReplRoot/
+    package.json
+    replit.nix
+    root.sh
+    server.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+~/LABINFO$ git log
+fatal: your current branch 'master' does not have any commits yet
+~/LABINFO$ cd ~
+~$ cd LABINFO/LABINFO-RECURSO/
+~/LABINFO/LABINFO-RECURSO$ ls
+README.md
+~/LABINFO/LABINFO-RECURSO$ mkdir aluno
+~/LABINFO/LABINFO-RECURSO$ cd aluno
+~/.../LABINFO-RECURSO/aluno$ mv ./../README.md ./
+~/.../LABINFO-RECURSO/aluno$ cat README.md 
+# LABINFO-RECURSO
+Prova de recurso a Laboratório de Informática de Ratmir Mukazhanov
+~/.../LABINFO-RECURSO/aluno$ cd ..
+~/LABINFO/LABINFO-RECURSO$ git commit -m "Tarefa 3 concluída"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'runner@77fb088ac9a5.(none)')
+~/LABINFO/LABINFO-RECURSO$ git remote set-url origin https://provafinal@github.com/ratmir-delas/LABINFO-RECURSO.git
+~/LABINFO/LABINFO-RECURSO$ git commit -m "Tarefa 3 concluída"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'runner@77fb088ac9a5.(none)')
+~/LABINFO/LABINFO-RECURSO$ git config --global user.email "ratmir.m2004@gmail.com"
+~/LABINFO/LABINFO-RECURSO$ git config --global user.name "ratmir-delas"
+~/LABINFO/LABINFO-RECURSO$ git commit -m "Tarefa 3 concluída"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    deleted:    README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+    aluno/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+~/LABINFO/LABINFO-RECURSO$ git config --global --unset core.excludesfile
+~/LABINFO/LABINFO-RECURSO$ git remote set-url origin https://provafinal@github.com/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/LABINFO-RECURSO.git
+~/LABINFO/LABINFO-RECURSO$ git commit -m "Tarefa 3 concluída"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    deleted:    README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+    aluno/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+~/LABINFO/LABINFO-RECURSO$ ^C
+~/LABINFO/LABINFO-RECURSO$ git remote set-url origin https://provafinal@github.com/ratmir-delas/LABINFO-RECURSO.git
+~/LABINFO/LABINFO-RECURSO$ git commit -m "Tarefa 3 concluída"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    deleted:    README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+    aluno/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+~/LABINFO/LABINFO-RECURSO$ git add .
+~/LABINFO/LABINFO-RECURSO$ git commit -m "Tarefa 3 concluída"
+[main ea57ab9] Tarefa 3 concluída
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename README.md => aluno/README.md (100%)
+~/LABINFO/LABINFO-RECURSO$ git push
+error: unable to read askpass response from 'replit-git-askpass'
+Password for 'https://provafinal@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/ratmir-delas/LABINFO-RECURSO.git/'
+~/LABINFO/LABINFO-RECURSO$ git push
+error: unable to read askpass response from 'replit-git-askpass'
+Password for 'https://provafinal@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (2/2), 238 bytes | 238.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ratmir-delas/LABINFO-RECURSO.git
+   81be774..ea57ab9  main -> main
+~/LABINFO/LABINFO-RECURSO$ vi
+vi: command not installed. Multiple versions of this command were found in Nix.
+Select one to run (or press Ctrl-C to cancel):
+Adding vim to replit.nix
+success
+/nix/store/6m8k6drrfqg53x2ighzwglwfnqmairhb-vim-8.2.4186
+~/LABINFO/LABINFO-RECURSO$ ls
+aluno  index.html
+~/LABINFO/LABINFO-RECURSO$ cat index.html 
+CTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+                <title>Prova de recurso Lab Info</title>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <h1>Prova de recurso Lab Info</h1>
+
+    </body>
+</html>
+~/LABINFO/LABINFO-RECURSO$ git commit -m "Criação do ficheiro index.html"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'runner@0fb9739a2b2d.(none)')
+~/LABINFO/LABINFO-RECURSO$ git --global user.email "ratmir.m2004@gmail.com"
+unknown option: --global
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+~/LABINFO/LABINFO-RECURSO$ git config --global user.email "ratmir.m2004@gmail.com"
+~/LABINFO/LABINFO-RECURSO$ git config --global user.name "ratmir-delas"
+~/LABINFO/LABINFO-RECURSO$ git commit -m "Criação do ficheiro index.html"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+    index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+~/LABINFO/LABINFO-RECURSO$ git add .
+~/LABINFO/LABINFO-RECURSO$ git commit -m "Criação do ficheiro index.html"
+[main d854beb] Criação do ficheiro index.html
+ 1 file changed, 13 insertions(+)
+ create mode 100644 index.html
+~/LABINFO/LABINFO-RECURSO$ git push
+error: unable to read askpass response from 'replit-git-askpass'
+Password for 'https://provafinal@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 502 bytes | 502.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ratmir-delas/LABINFO-RECURSO.git
+   ea57ab9..d854beb  main -> main
+~/LABINFO/LABINFO-RECURSO$ history > comandosNoServidor.txt
+~/LABINFO/LABINFO-RECURSO$ cd ~
+~$ cd LABINFO/LABINFO-RECURSO
+~/LABINFO/LABINFO-RECURSO$ ^C
+~/LABINFO/LABINFO-RECURSO$ 
